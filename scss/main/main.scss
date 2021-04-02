@@ -1,0 +1,58 @@
+.section-bg {
+    background-color: bisque;
+    .wraper {
+        @extend %container;
+        @include d-flex(flex,center,center);
+        @media (max-width: 600px) {
+            @include d-flex(flex,space-between,flex-start);
+        }
+        @media (max-width: 480px) {
+            @include d-flex(flex,center,center);
+        }
+        .test1 {
+            color:$color01;
+            margin-left: $size01;
+            font-size: 20px;
+            // @include hoveranimation(all,2s,ease,2s);
+            &:hover {
+                color: $color02;
+            }
+        }
+        img {
+            width: 300px;
+        }
+    }
+}
+
+.section-bg2 {
+    background-color: burlywood;
+    .wraper-flex {
+       @extend %container;
+       @include d-flex(flex, space-between, center);
+       p {
+           @include hoveranimation(all,0.5s,linear,2s);
+           &:nth-child(1) {
+               color: $color02;
+           }
+           &:nth-child(2) {
+               color: $color01;
+           }
+           &:hover {
+               color: #fff;
+           }
+       }
+       .box {
+           @include width(600px);
+       }
+       .test-box {
+           width: 150px;
+           background-color: blue;
+            @media (max-width: 700px) {
+                background-color: aqua;
+            }
+       }
+       h3 {
+           @extend .test-box;
+       }
+    }
+}

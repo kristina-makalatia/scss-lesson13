@@ -1,0 +1,92 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+.section-bg .wraper, .section-bg2 .wraper-flex {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: coral; }
+
+.section-bg {
+  background-color: bisque; }
+  .section-bg .wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 600px) {
+      .section-bg .wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; } }
+    @media (max-width: 480px) {
+      .section-bg .wraper {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    .section-bg .wraper .test1 {
+      color: blue;
+      margin-left: 50px;
+      font-size: 20px; }
+      .section-bg .wraper .test1:hover {
+        color: red; }
+    .section-bg .wraper img {
+      width: 300px; }
+
+.section-bg2 {
+  background-color: burlywood; }
+  .section-bg2 .wraper-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section-bg2 .wraper-flex p {
+      transition: all 0.5s linear 2s; }
+      .section-bg2 .wraper-flex p:nth-child(1) {
+        color: red; }
+      .section-bg2 .wraper-flex p:nth-child(2) {
+        color: blue; }
+      .section-bg2 .wraper-flex p:hover {
+        color: #fff; }
+    .section-bg2 .wraper-flex .box {
+      background-color: darkgreen; }
+    .section-bg2 .wraper-flex .test-box, .section-bg2 .wraper-flex h3 {
+      width: 150px;
+      background-color: blue; }
+      @media (max-width: 700px) {
+        .section-bg2 .wraper-flex .test-box, .section-bg2 .wraper-flex h3 {
+          background-color: aqua; } }

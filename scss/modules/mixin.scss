@@ -1,0 +1,23 @@
+@mixin d-flex($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin hoveranimation($property,$duration,$type,$delay) {
+    transition: $property $duration $type $delay;
+}
+
+
+@mixin width($size) {
+    @if ($size == 100px) {
+        background-color: red;
+    }@else if($size == 200px) {
+        background-color: blue;
+    }@else if($size == 500px) {
+        background-color:black;
+    }@else {
+        background-color: darkgreen;
+    }
+}
+
